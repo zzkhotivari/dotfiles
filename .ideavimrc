@@ -1,0 +1,27 @@
+set nu
+set rnu
+set scrolloff=16
+set NERDTree
+set surround
+set highlightedyank
+set matchit
+set commentary
+set ideajoin
+let mapleader=" "
+" Do incremental searching.
+set incsearch
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+command! Reload execute ":source ~/.ideavimrc"
+command! Config execute ":e ~/.ideavimrc"
+noremap <C-w> :q<CR>
+nnoremap <leader>r :NERDTreeFind<CR>
+noremap <leader>y "+y
+nnoremap H :tabprev<CR>
+nnoremap L :tabnext<CR>
+let g:highlightedyank_highlight_color = "rgba(136, 192, 208, 155)"
+let g:highlightedyank_highlight_duration = "300"
+
+" Linux only
+nnoremap <A-d> yyp
+vnoremap <A-d> ygv<ESC>p

@@ -108,6 +108,9 @@ eval "$(starship init zsh)"
 # pnpm
 export PNPM_HOME="/home/z/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+export PATH=$PATH:/usr/local/go/bin
 # pnpm end
 #
 bindkey '^N' autosuggest-accept
+
+export PATH=/home/z/.local/bin:$PATH

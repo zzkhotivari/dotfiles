@@ -1,94 +1,65 @@
+window:
+  dynamic_padding: true
+  decorations: "None"
+  opacity: 0.97
+  padding:
+    x: 18
+    y: 18
+  blur: true
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
 font:
   normal:
     family: ComicShannsMono Nerd Font Mono
-    style: bold
-  size: 19
+    style:  Bold
+  bold:
+    family: ComicShannsMono Nerd Font Mono
+    style:  Bold
+  italic:
+    family: ComicShannsMono Nerd Font Mono
+    style:  Bold
+  bold_italic:
+    family: ComicShannsMono Nerd Font Mono
+    style: Bold
+  size: 23
 
 draw_bold_text_with_bright_colors: true
 
 colors:
-  # Default colours
-  primary:
-    background: '0x000b1e'
-    foreground: '0x0abdc6'
+       # Default colors
+     primary:
+         background: '0x1b182c'
+         foreground: '0xcbe3e7'
 
-  cursor:
-    text: '0x2e2e2d'
-    # text: '0x000000'
-    cursor: '0xffffff'
+     # Normal colors
+     normal:
+         black:   '0x100e23'
+         red:     '0xff8080'
+         green:   '0x95ffa4'
+         yellow:  '0xffe9aa'
+         blue:    '0x91ddff'
+         magenta: '0xc991e1'
+         cyan:    '0xaaffe4'
+         white:   '0xcbe3e7'
 
-  # Normal colors
-  normal:
-    black:   '0x123e7c'
-    red:     '0xff0000'
-    green:   '0xd300c4'
-    yellow:  '0xf57800'
-    blue:    '0x123e7c'
-    magenta: '0x711c91'
-    cyan:    '0x0abdc6'
-    white:   '0xd7d7d5'
+     # Bright colors
+     bright:
+         black:   '0x565575'
+         red:     '0xff5458'
+         green:   '0x62d196'
+         yellow:  '0xffb378'
+         blue:    '0x65b2ff'
+         magenta: '0x906cff'
+         cyan:    '0x63f2f1'
+         white:   '0xa6b3cc'
 
-  # Bright colors
-  bright:
-    black:   '0x1c61c2'
-    red:     '0xff0000'
-    green:   '0xd300c4'
-    yellow:  '0xf57800'
-    blue:    '0x00ff00'
-    magenta: '0x711c91'
-    cyan:    '0x0abdc6'
-    white:   '0xd7d7d5'
-
-  # dim colors
-  dim:
-    black:   '0x1c61c2'
-    red:     '0xff0000'
-    green:   '0xd300c4'
-    yellow:  '0xf57800'
-    blue:    '0x123e7c'
-    magenta: '0x711c91'
-    cyan:    '0x0abdc6'
-    white:   '0xd7d7d5'
-
-# colors:
-#       # Default colors
-#     primary:
-#         background: '0x1b182c'
-#         foreground: '0xcbe3e7'
-#
-#     # Normal colors
-#     normal:
-#         black:   '0x100e23'
-#         red:     '0xff8080'
-#         green:   '0x95ffa4'
-#         yellow:  '0xffe9aa'
-#         blue:    '0x91ddff'
-#         magenta: '0xc991e1'
-#         cyan:    '0xaaffe4'
-#         white:   '0xcbe3e7'
-#
-#     # Bright colors
-#     bright:
-#         black:   '0x565575'
-#         red:     '0xff5458'
-#         green:   '0x62d196'
-#         yellow:  '0xffb378'
-#         blue:    '0x65b2ff'
-#         magenta: '0x906cff'
-#         cyan:    '0x63f2f1'
-#         white:   '0xa6b3cc'
-
-window:
-  dynamic_padding: false
-  decorations: full
-  padding:
-    x: 19
-    y: 19
-  margin: 20
+selection:
+  save_to_clipboard: false
 
 env:
   TERM: xterm-256color
 mouse:
   hide_when_typing: true
-shell:
-  program: /usr/bin/zsh

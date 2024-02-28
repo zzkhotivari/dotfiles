@@ -1,0 +1,68 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "0x565575"
+blue = "0x65b2ff"
+cyan = "0x63f2f1"
+green = "0x62d196"
+magenta = "0x906cff"
+red = "0xff5458"
+white = "0xa6b3cc"
+yellow = "0xffb378"
+
+[colors.normal]
+black = "0x100e23"
+blue = "0x91ddff"
+cyan = "0xaaffe4"
+green = "0x95ffa4"
+magenta = "0xc991e1"
+red = "0xff8080"
+white = "0xcbe3e7"
+yellow = "0xffe9aa"
+
+[colors.primary]
+background = "0x1b182c"
+foreground = "0xcbe3e7"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 23
+
+[font.bold]
+family = "ComicShannsMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "ComicShannsMono Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "ComicShannsMono Nerd Font Mono"
+style = "Bold"
+
+[font.normal]
+family = "ComicShannsMono Nerd Font Mono"
+style = "Bold"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = false
+
+[window]
+blur = true
+decorations = "Buttonless"
+dynamic_padding = true
+opacity = 0.97
+
+[window.padding]
+x = 18
+y = 18

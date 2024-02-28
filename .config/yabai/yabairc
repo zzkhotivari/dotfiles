@@ -44,4 +44,6 @@ yabai -m rule --add app="^Docker Desktop$" manage=off layer=above
 yabai -m rule --add app="^Weather$" manage=off layer=above
 yabai -m rule --add app="^Notes$" manage=off layer=above
 yabai -m rule --add app="^zoom.us$" manage=off layer=above
+yabai -m rule --add app="^OrbStack$" manage=off layer=above
+yabai -m rule --add app="^AppCleaner$" manage=off layer=above
 

@@ -1,47 +1,47 @@
-# Path to your oh-my-zsh installation.
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export ZSH="$HOME/.oh-my-zsh"
 export TERM=xterm-256color
+export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOCONNECT=true
+export XDG_CONFIG_HOME="$HOME/.config"
 
 ZSH_THEME="robbyrussell"
 
-export UPDATE_ZSH_DAYS=3
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting tmux)
 
-ENABLE_CORRECTION="true"
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting z tmux)
+bindkey '^N' autosuggest-accept
 
-if [ "$TMUX" = "" ]; then TERM=xterm-256color tmux; fi
+source $ZSH/oh-my-zsh.sh
+
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+echo 'eval "$(atuin init zsh)"' >> ~/.zshrc
 
 alias vimconf="vim ~/.config/nvim/init.vim"
 alias vim=nvim
 alias zshconfig="vim ~/.zshrc"
-alias docker-compose="docker compose"
 alias ls="lsd"
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
-
-eval "$(starship init zsh)"
 # pnpm
-export PNPM_HOME="/home/z/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-export PATH=$PATH:/usr/local/go/bin
+export PNPM_HOME="/Users/z/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
 
-bindkey '^N' autosuggest-accept
-
-export PATH=/home/z/.local/bin:$PATH
-
 # bun completions
-[ -s "/Users/zuka/.bun/_bun" ] && source "/Users/zuka/.bun/_bun"
+[ -s "/Users/z/.bun/_bun" ] && source "/Users/z/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

@@ -21,7 +21,3 @@ nnoremap H :tabprev<CR>
 nnoremap L :tabnext<CR>
 let g:highlightedyank_highlight_color = "rgba(136, 192, 208, 155)"
 let g:highlightedyank_highlight_duration = "300"
-
-" Linux only
-nnoremap <A-d> yyp
-vnoremap <A-d> ygv<ESC>p

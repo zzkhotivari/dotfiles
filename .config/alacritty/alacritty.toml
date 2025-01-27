@@ -29,22 +29,22 @@ foreground = "0xcbe3e7"
 TERM = "xterm-256color"
 
 [font]
-size = 23
+size = 21
 
 [font.bold]
-family = "ComicShannsMono Nerd Font Mono"
+family = "RecMonoDuotone Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "ComicShannsMono Nerd Font Mono"
+family = "RecMonoDuotone Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "ComicShannsMono Nerd Font Mono"
+family = "RecMonoDuotone Nerd Font Mono"
 style = "Bold"
 
 [font.normal]
-family = "ComicShannsMono Nerd Font Mono"
+family = "RecMonoDuotone Nerd Font Mono"
 style = "Bold"
 
 [mouse]
@@ -61,8 +61,8 @@ save_to_clipboard = false
 blur = true
 decorations = "Buttonless"
 dynamic_padding = true
-opacity = 0.97
+opacity = 0.50
 
 [window.padding]
-x = 18
-y = 18
+x = 20
+y = 20

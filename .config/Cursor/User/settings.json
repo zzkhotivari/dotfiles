@@ -30,6 +30,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "modifications",
     "editor.codeActionsOnSave": {
+        "editor.formatOnSave": "always",
         "source.fixAll.biome": "always",
         "source.organizeImports.biome": "always",
         "source.sortImports": "always"
@@ -76,7 +77,6 @@
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.leader": "<space>",
-    "vim.tabSwitches": true,
     "editor.folding": false,
     "editor.lineNumbers": "on",
     "editor.glyphMargin": false,
@@ -209,54 +209,20 @@
     "[jsonc]": {
         "editor.defaultFormatter": "biomejs.biome"
     },
-    "[latex]": {
-        "editor.defaultFormatter": "James-Yu.latex-workshop"
-    },
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
+    // "[dockerfile]": {
+    //     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    // },
     "[prisma]": {
         "editor.defaultFormatter": "Prisma.prisma"
     },
-    "[toml]": {
-        "editor.defaultFormatter": "tamasfe.even-better-toml"
-    },
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "cSpell.enabled": true,
-    "cSpell.language": "en",
     "terminal.integrated.env.osx": {},
-    "console-ninja.featureSet": "Community",
-    "console-ninja.fontSize": 15,
-    "auto-rename-tag.activationOnLanguage": [
-        "html",
-        "xml",
-        "php",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
     // "reactSnippets.settings.prettierEnabled": true,
     // "prettier.requireConfig": true,
     "workbench.preferredLightColorTheme": "Default Dark+",
     "explorer.confirmDelete": false,
-    "github.copilot.editor.enableAutoCompletions": true,
     "editor.accessibilitySupport": "off",
-    "eslint.format.enable": true,
-    "symbols.hidesExplorerArrows": false,
     "biome.enabled": true,
-    "biome.lspBin": "biome",
-    "biome.formatOnSave": true,
-    "biome.lintOnSave": true,
-    "biome.organizeImportsOnSave": true,
-    "biome.diagnostics.enabled": true,
-    "biome.javascriptLanguageServer": true,
-    "biome.typescriptLanguageServer": true,
-    "workbench.iconTheme": "doodles-icons",
-    "workbench.colorTheme": "August - In Bed By 7pm (Darker)",
+    "biome.lsp.bin": "biome",
+    "workbench.iconTheme": "catppuccin-perfect-latte",
+    "workbench.colorTheme": "Raijū - Dark",
 }

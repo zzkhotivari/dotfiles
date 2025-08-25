@@ -1,5 +1,5 @@
 [
-   {
+  {
     "key": "ctrl+cmd+l",
     "command": "biome.format"
   },
@@ -8,7 +8,6 @@
     "command": "editor.action.organizeImports",
     "when": "editorTextFocus && !editorReadonly"
   },
-
   // webstorm movements
   {
     "key": "alt+shift+up",
@@ -176,11 +175,6 @@
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
   {
-    "key": "ctrl+cmd+k",
-    "command": "editor.action.formatDocument.none",
-    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
-  },
-  {
     "key": "shift+alt+f",
     "command": "-editor.action.formatDocument.none",
     "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
@@ -214,9 +208,12 @@
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
   {
-    "key": "ctrl+cmd+k",
-    "command": "editor.action.organizeImports",
-    "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+    "key": "cmd+2",
+    "command": "aichat.newchataction"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-aichat.newchataction"
   },
   {
     "key": "shift+alt+o",
@@ -224,11 +221,7 @@
     "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
   },
   {
-    "key": "cmd+2",
-    "command": "aichat.newchataction"
-  },
-  {
-    "key": "cmd+l",
-    "command": "-aichat.newchataction"
+    "key": "cmd+e",
+    "command": "composerMode.background"
   }
 ]

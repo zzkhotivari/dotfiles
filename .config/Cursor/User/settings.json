@@ -1,228 +1,182 @@
 {
-    "workbench.settings.editor": "json",
-    "workbench.editor.enablePreview": true,
-    "workbench.sideBar.location": "right",
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 8,
-    "workbench.editor.wrapTabs": true,
-    "workbench.editor.decorations.colors": true,
-    "workbench.editor.decorations.badges": true,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#212236",
-        "statusBar.foreground": "#33ABCC"
-    },
-    "breadcrumbs.enabled": true,
-    "editor.defaultFormatter": "biomejs.biome",
-    "editor.tabSize": 2,
-    "editor.cursorBlinking": "smooth",
-    "editor.minimap.enabled": false,
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.smoothScrolling": true,
-    "workbench.list.smoothScrolling": true,
-    "editor.fontFamily": "Dank Mono, RecMonoCasual Nerd Font Mono, Mononoki Nerd Font Mono, ComicShannsMono Nerd Font Mono",
-    "editor.fontSize": 18,
-    "editor.lineHeight": 25,
-    "editor.letterSpacing": 0,
-    "editor.cursorWidth": 0,
-    "editor.fontWeight": "900",
-    "editor.cursorSurroundingLines": 18,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "modifications",
-    "editor.codeActionsOnSave": {
-        "editor.formatOnSave": "always",
-        "source.fixAll.biome": "always",
-        "source.organizeImports.biome": "always",
-        "source.sortImports": "always"
-    },
-    "editor.suggestSelection": "first",
-    "editor.fontLigatures": true,
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "comment",
-                    "entity.name.type.class",
-                    "keyword",
-                    "constant",
-                    "storage.modifier",
-                    "storage.type.class.js"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "scope": [
-                    "invalid",
-                    "keyword.operator",
-                    "constant.numeric.css",
-                    "keyword.other.unit.px.css",
-                    "constant.numeric.decimal.js",
-                    "constant.numeric.json"
-                ],
-                "settings": {
-                    "fontStyle": "bold"
-                }
-            }
-        ]
-    },
-    "editor.inlineSuggest.showToolbar": "always",
-    "editor.linkedEditing": true,
-    "vim.smartRelativeLine": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.searchHighlightColor": "#EBCB8B",
-    "vim.searchHighlightTextColor": "#2E3440",
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.leader": "<space>",
-    "editor.folding": false,
-    "editor.lineNumbers": "on",
-    "editor.glyphMargin": false,
-    "editor.scrollBeyondLastLine": false,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
+  "workbench.settings.editor": "json",
+  "workbench.editor.enablePreview": true,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 8,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.decorations.badges": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#212236",
+    "statusBar.foreground": "#33ABCC"
+  },
+  "breadcrumbs.enabled": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.tabSize": 2,
+  "editor.cursorBlinking": "phase",
+  "editor.minimap.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.fontFamily": "Comic Code Ligatures, Liga Comic Mono, RecMonoCasual Nerd Font Mono, Dank Mono, Mononoki Nerd Font Mono, ComicShannsMono Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.lineHeight": 23,
+  "editor.letterSpacing": -0.3,
+  "editor.cursorWidth": 0,
+  "editor.renderLineHighlight": "all",
+  "workbench.tree.indent": 16,
+  "editor.fontWeight": "900",
+  "editor.cursorSurroundingLines": 18,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.codeActionsOnSave": {
+    "editor.formatOnSave": "always",
+    "source.fixAll.biome": "always",
+    "source.organizeImports.biome": "always",
+    "source.sortImports": "always"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "entity.name.type.class",
+          "keyword",
+          "constant",
+          "storage.modifier",
+          "storage.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": ""
         }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "y"
-            ],
-            "after": [
-                "\"+",
-                "y"
-            ]
-        },
-        {
-            "before": [
-                "<shift>",
-                "%"
-            ],
-            "commands": [
-                "editor.emmet.action.matchTag",
-            ]
+      },
+      {
+        "scope": [
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": "bold"
         }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "d"
-            ],
-            "after": [
-                "d",
-                "d"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "%"
-            ],
-            "commands": [
-                "editor.emmet.action.matchTag"
-            ]
-        },
-        {
-            "before": [
-                "<C-n>"
-            ],
-            "commands": [
-                ":nohl"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "r"
-            ],
-            "commands": [
-                "revealInExplorer"
-            ]
-        },
-        {
-            "before": [
-                "H"
-            ],
-            "commands": [
-                "workbench.action.previousEditor"
-            ]
-        },
-        {
-            "before": [
-                "L"
-            ],
-            "commands": [
-                "workbench.action.nextEditor"
-            ]
-        },
-        {
-            "before": [
-                "Q"
-            ],
-            "after": [
-                "gq"
-            ]
-        }
-    ],
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false,
-        "<C-w>": false,
-        "<leader>r": false,
-        "<leader>y": false
+      }
+    ]
+  },
+  "editor.inlineSuggest.showToolbar": "always",
+  "editor.linkedEditing": true,
+  "vim.smartRelativeLine": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.searchHighlightColor": "#EBCB8B",
+  "vim.searchHighlightTextColor": "#2E3440",
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "editor.folding": false,
+  "editor.lineNumbers": "on",
+  "editor.glyphMargin": false,
+  "editor.scrollBeyondLastLine": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "y"],
+      "after": ["\"+", "y"]
     },
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "files.associations": {
-        "Dockerfile_*": "dockerfile",
-        ".env*": "shellscript"
+    {
+      "before": ["<shift>", "%"],
+      "commands": ["editor.emmet.action.matchTag"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
     },
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[javascript]": {
-        "editor.defaultFormatter": "biomejs.biome"
+    {
+      "before": ["<leader>", "%"],
+      "commands": ["editor.emmet.action.matchTag"]
     },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "biomejs.biome"
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
     },
-    "[typescript]": {
-        "editor.defaultFormatter": "biomejs.biome"
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["revealInExplorer"]
     },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "biomejs.biome"
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
     },
-    "[json]": {
-        "editor.defaultFormatter": "biomejs.biome"
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
     },
-    "[jsonc]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    // "[dockerfile]": {
-    //     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    // },
-    "[prisma]": {
-        "editor.defaultFormatter": "Prisma.prisma"
-    },
-    "terminal.integrated.env.osx": {},
-    // "reactSnippets.settings.prettierEnabled": true,
-    // "prettier.requireConfig": true,
-    "workbench.preferredLightColorTheme": "Default Dark+",
-    "explorer.confirmDelete": false,
-    "editor.accessibilitySupport": "off",
-    "biome.enabled": true,
-    "biome.lsp.bin": "biome",
-    "workbench.iconTheme": "catppuccin-perfect-latte",
-    "workbench.colorTheme": "Raijū - Dark",
+    {
+      "before": ["Q"],
+      "after": ["gq"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-w>": false,
+    "<leader>r": false,
+    "<leader>y": false
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "Dockerfile_*": "dockerfile",
+    ".env*": "shellscript"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  // "[dockerfile]": {
+  //     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  // },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "terminal.integrated.env.osx": {},
+  // "reactSnippets.settings.prettierEnabled": true,
+  // "prettier.requireConfig": true,
+  "workbench.preferredLightColorTheme": "Default Dark+",
+  "explorer.confirmDelete": false,
+  "editor.accessibilitySupport": "off",
+  "biome.enabled": true,
+  "biome.lsp.bin": "biome",
+  "biome.suggestInstallingGlobally": false,
+  "workbench.colorTheme": "August - Ariake Dark",
+  "workbench.iconTheme": "catppuccin-perfect-latte"
 }
